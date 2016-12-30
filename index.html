@@ -15,8 +15,9 @@
         <li><a class="not-active-page" href="about.html">About</a></li>
       </ul>
     </header>
-
-    <div class="home">
+    <main class="home">
+      <article>
+      <p id="data"></p>
       <p>
         Just ten miles north of Santa Cruz, a battered black-and-yellow pickup sits rusting
         in the grass along a gorgeous stretch of coastal California highway. From its bed
@@ -33,6 +34,52 @@
         Justice, estimates that of the roughly 2.5 million farmworkers in America, only around
         25,000 are unionized. And only a small percent of those 25,000 work on organic farms.
       </p>
+      <ul class="fancystyle">
+        <li>Force of nature</li>
+        <li>Human nature</li>
+        <li>Natural history</li>
+        <li>Natural law</li>
+        <li>Natural science</li>
+        <li>Natural vs nurture</li>
+      </ul>
+      <p>
+        Beauty in nature has historically been a
+        prevalent theme in art and books,
+        filling large sections of libraries and bookstores. That nature has been depicted and
+        celebrated by so much art, photography, poetry, and other literature shows the
+        strength with which many people associate nature and beauty. Reasons why this
+        association exists, and what the association consists of, are studied by the
+        branch of philosophy called aesthetics. Beyond certain basic characteristics
+        that many philosophers agree about to explain what is seen as beautiful, the
+        opinions are virtually endless. Nature and wildness have been important
+        subjects in various eras of world history. An early tradition of landscape art began
+        in China during the Tang Dynasty (618–907). The tradition of representing nature as
+        it is became one of the aims of Chinese painting and was a significant influence in
+        Asian art. Although natural wonders are celebrated in the Psalms and the Book of Job,
+        wilderness portrayals in art became more prevalent in the 1800s, especially in
+        the works of the Romantic movement. British artists John Constable
+        and J. M. W. Turner turned their attention to capturing the beauty of the
+        natural world in their paintings. Before that, paintings had been primarily
+        of religious scenes or of human beings. William Wordsworth's poetry described
+        the wonder of the natural world, which had formerly been viewed as a threatening
+        place. Increasingly the valuing of nature became an aspect of Western culture.
+        This artistic movement also coincided with the Transcendentalist movement in the
+        Western world. A common classical idea of beautiful art involves the word mimesis,
+        the imitation of nature. Also in the realm of ideas about beauty in nature is that the
+        perfect is implied through perfect mathematical forms and more generally by patterns in
+        nature. As David Rothenburg writes, "The beautiful is the root of science and the goal
+        of art, the highest possibility that humanity can ever hope to see
+      </p>
+      <ol id="unusual-links">
+        <li class="dis-inline"><a href="http://www.nationalgeographic.com">National Geographic</a></li>
+        <li class="dis-inline"><a href="http://www.wwf.pl">WWF</a></li>
+        <li class="dis-inline"><a href="http://www.greenpeace.org">Greenpeace</a></li>
+        <li class="dis-inline"><a href="http://www.greatapeproject.org">Great Ape Project</a></li>
+        <li class="dis-inline"><a href="http://www.clientearth.org">ClientEarth</a></li>
+        <li class="dis-inline"><a href="http://www.birdlife.org">BirdLife International</a></li>
+      </ol>
+
+    </article>
       <div class="img">
         <a target="_blank" href="pic1.jpg">
           <img src="pic1.jpg" alt="Lion" width="600" height="400">
@@ -97,6 +144,18 @@
         <div class="desc">The clouded leopard is a wild cat occurring from the Himalayan foothills through
           mainland Southeast Asia into China.</div>
       </div>
-    </div>
+    </main>
+    <footer>
+      Author Jacek P - All right reserved
+    </footer>
   </body>
+  <script>
+    var d = new Date();
+    var year = d.getFullYear();
+    var hour = d.getHours();
+    var minutes = d.getMinutes();
+    var month = d.getMonth();
+    var day = d.getDate();
+    document.getElementById("data").innerHTML = "Today is " + day + "." + (month+1) + "." + year + " /// " + hour +":" + minutes;
+  </script>
 </html>
