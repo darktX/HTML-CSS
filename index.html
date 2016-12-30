@@ -156,6 +156,10 @@
     var minutes = d.getMinutes();
     var month = d.getMonth();
     var day = d.getDate();
-    document.getElementById("data").innerHTML = "Today is " + day + "." + (month+1) + "." + year + " /// " + hour +":" + minutes;
+    var result = "Today is " + day + "." + (month+1) + "." + year + " /// " + hour +":" + minutes;
+    if(minutes<10){
+      result = "Today is " + day + "." + (month+1) + "." + year + " /// " + hour +":" +"0"+ minutes;
+    }
+    document.getElementById("data").innerHTML = result;
   </script>
 </html>
