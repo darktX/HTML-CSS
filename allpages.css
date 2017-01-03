@@ -39,6 +39,14 @@ footer{
   font-size: 20px;
   text-align: right;
 }
+#numbering{
+  float: right;
+  color: green;
+  font-family: monospace;
+  font-size: 15px;
+  text-align: center;
+  text-shadow: black 2px 2px;
+}
 a:link{
   color: green;
 }
